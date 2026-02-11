@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships | ZIMHUB</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header color-wave">
+        <div class="container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <div class="tagline">
+                <h2>INVEST IN YOUR FUTURE</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search scholarships...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="scholarships.html" class="active"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SCHOLARSHIPS PAGE CONTENT -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header fade-in-up">
+            <h1><i class="fas fa-graduation-cap"></i> Scholarships & Funding</h1>
+            <p>Find scholarships, bursaries, and funding opportunities for local and international studies</p>
+        </div>
+        
+        <!-- Urgent Deadlines -->
+        <div class="urgent-alert fade-in-up delay-1">
+            <div class="alert-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-content">
+                <h3>Urgent Deadlines Approaching!</h3>
+                <p>3 scholarships closing within the next 7 days. Apply now!</p>
+            </div>
+            <a href="#" class="alert-btn">
+                View Urgent <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <!-- Scholarship Categories -->
+        <section class="scholarship-categories fade-in-up delay-2">
+            <h2><i class="fas fa-filter"></i> Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card hover-lift" data-category="undergrad">
+                    <div class="category-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Undergraduate</h3>
+                    <p class="scholarship-count">24 Opportunities</p>
+                    <span class="category-info">For bachelor's degree programs</span>
+                </div>
+                
+                <div class="category-card hover-lift" data-category="postgrad">
+                    <div class="category-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Postgraduate</h3>
+                    <p class="scholarship-count">18 Opportunities</p>
+                    <span class="category-info">Master's & PhD programs</span>
+                </div>
+                
+                <div class="category-card hover-lift" data-category="international">
+                    <div class="category-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>International</h3>
+                    <p class="scholarship-count">32 Opportunities</p>
+                    <span class="category-info">Study abroad programs</span>
+                </div>
+                
+                <div class="category-card hover-lift" data-category="local">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Local Institutions</h3>
+                    <p class="scholarship-count">15 Opportunities</p>
+                    <span class="category-info">Zimbabwean universities</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Scholarships -->
+        <section class="featured-scholarships fade-in-up delay-3">
+            <h2><i class="fas fa-award"></i> Featured Scholarships</h2>
+            <div class="scholarships-grid">
+                <div class="scholarship-card hover-lift">
+                    <div class="scholarship-header">
+                        <div class="scholarship-provider">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h3>Government Scholarship</h3>
+                                <p class="provider-name">Ministry of Higher Education</p>
+                            </div>
+                        </div>
+                        <span class="deadline deadline-soon">Deadline: 28 Feb 2025</span>
+                    </div>
+                    
+                    <div class="scholarship-details">
+                        <p class="description">Full tuition scholarship for STEM students at local universities. Includes living allowance and book stipend.</p>
+                        
+                        <div class="scholarship-meta">
+                            <span><i class="fas fa-graduation-cap"></i> Undergraduate</span>
+                            <span><i class="fas fa-money-bill-wave"></i> Full Funding</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Local Universities</span>
+                        </div>
+                        
+                        <div class="eligibility">
+                            <h4>Eligibility:</h4>
+                            <ul>
+                                <li>A-Level with 12+ points in STEM subjects</li>
+                                <li>Under 21 years old</li>
+                                <li>Zimbabwean citizenship</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="scholarship-actions">
+                        <a href="#" class="apply-btn">
+                            <i class="fas fa-file-alt"></i> Apply Now
+                        </a>
+                        <a href="#" class="details-btn">
+                            <i class="fas fa-info-circle"></i> More Details
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="scholarship-card hover-lift">
+                    <div class="scholarship-header">
+                        <div class="scholarship-provider">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>International Study Grant</h3>
+                                <p class="provider-name">African Development Fund</p>
+                            </div>
+                        </div>
+                        <span class="deadline">Deadline: 15 Mar 2025</span>
+                    </div>
+                    
+                    <div class="scholarship-details">
+                        <p class="description">Scholarship for postgraduate studies in Engineering and Technology at partner universities worldwide.</p>
+                        
+                        <div class="scholarship-meta">
+                            <span><i class="fas fa-graduation-cap"></i> Postgraduate</span>
+                            <span><i class="fas fa-money-bill-wave"></i> Full Funding + Stipend</span>
+                            <span><i class="fas fa-map-marker-alt"></i> International</span>
+                        </div>
+                        
+                        <div class="eligibility">
+                            <h4>Eligibility:</h4>
+                            <ul>
+                                <li>First Class or 2:1 bachelor's degree</li>
+                                <li>Admission to partner university</li>
+                                <li>2+ years work experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="scholarship-actions">
+                        <a href="#" class="apply-btn">
+                            <i class="fas fa-file-alt"></i> Apply Now
+                        </a>
+                        <a href="#" class="details-btn">
+                            <i class="fas fa-info-circle"></i> More Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Scholarship Filters -->
+        <section class="advanced-filters fade-in-up delay-4">
+            <h2><i class="fas fa-sliders-h"></i> Find Your Scholarship</h2>
+            <div class="filter-grid">
+                <div class="filter-card">
+                    <h3><i class="fas fa-search"></i> Search by Field</h3>
+                    <div class="field-tags">
+                        <span class="field-tag">Engineering</span>
+                        <span class="field-tag">Medicine</span>
+                        <span class="field-tag">Business</span>
+                        <span class="field-tag">Arts</span>
+                        <span class="field-tag">Science</span>
+                        <span class="field-tag">Technology</span>
+                    </div>
+                </div>
+                
+                <div class="filter-card">
+                    <h3><i class="fas fa-calendar"></i> Upcoming Deadlines</h3>
+                    <div class="deadline-list">
+                        <div class="deadline-item">
+                            <span class="date">25 Feb</span>
+                            <span class="name">Women in STEM Scholarship</span>
+                        </div>
+                        <div class="deadline-item">
+                            <span class="date">28 Feb</span>
+                            <span class="name">Government Bursary</span>
+                        </div>
+                        <div class="deadline-item">
+                            <span class="date">10 Mar</span>
+                            <span class="name">Chevening Scholarship</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-card">
+                    <h3><i class="fas fa-question-circle"></i> Need Help?</h3>
+                    <p>Our scholarship advisors can help you find the right opportunity</p>
+                    <button class="help-btn">
+                        <i class="fas fa-comments"></i> Get Free Advice
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Application Tips -->
+        <section class="application-tips fade-in-up delay-5">
+            <div class="tips-card">
+                <div class="tips-header">
+                    <i class="fas fa-lightbulb tips-icon"></i>
+                    <h3>Scholarship Application Tips</h3>
+                </div>
+                <div class="tips-content">
+                    <div class="tip">
+                        <h4><i class="fas fa-check-circle"></i> Start Early</h4>
+                        <p>Begin applications at least 2 months before deadlines to avoid last-minute rush.</p>
+                    </div>
+                    <div class="tip">
+                        <h4><i class="fas fa-check-circle"></i> Personalize Essays</h4>
+                        <p>Tailor your application essays to each scholarship's specific requirements.</p>
+                    </div>
+                    <div class="tip">
+                        <h4><i class="fas fa-check-circle"></i> Gather Documents</h4>
+                        <p>Prepare transcripts, recommendation letters, and certificates in advance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        Empowering students through education funding opportunities.
+                    </p>
+                    <div class="scholarship-alert">
+                        <p><strong>Get Scholarship Alerts</strong></p>
+                        <input type="email" placeholder="Your email">
+                        <button class="alert-subscribe">
+                            <i class="fas fa-bell"></i> Subscribe
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="scholarships.html"><i class="fas fa-chevron-right"></i> Scholarships</a></li>
+                        <li><a href="jobs.html"><i class="fas fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="business.html"><i class="fas fa-chevron-right"></i> Business Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Scholarship Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Undergraduate</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Postgraduate</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Research Grants</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Exchange Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <div class="resources-links">
+                        <a href="#"><i class="fas fa-file-pdf"></i> Application Guide</a>
+                        <a href="#"><i class="fas fa-video"></i> Interview Preparation</a>
+                        <a href="#"><i class="fas fa-book"></i> Essay Writing Tips</a>
+                        <a href="#"><i class="fas fa-download"></i> Template Documents</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 ZIMHUB Scholarships | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+  <script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/scholarships.js"></script>
+</body>
+</html>

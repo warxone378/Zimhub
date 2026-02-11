@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports | ZIMHUB</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header color-wave">
+        <div class="container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <div class="tagline">
+                <h2>PASSION. PRIDE. PERFORMANCE.</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search sports news...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html" class="active"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="scholarships.html"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SPORTS PAGE CONTENT -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header fade-in-up">
+            <h1><i class="fas fa-trophy"></i> Sports Hub</h1>
+            <p>Live scores, match analysis, player transfers, and everything sports in Zimbabwe</p>
+        </div>
+        
+        <!-- Live Scores Ticker -->
+        <div class="live-scores-ticker fade-in-up delay-1">
+            <div class="ticker-label">
+                <i class="fas fa-broadcast-tower"></i> LIVE
+            </div>
+            <div class="ticker-content">
+                <div class="live-match">
+                    <span class="team">ZIM Warriors</span>
+                    <span class="score">2 - 1</span>
+                    <span class="team">Ghana</span>
+                    <span class="match-status">⚽ 65'</span>
+                </div>
+                <div class="live-match">
+                    <span class="team">Rhinos Cricket</span>
+                    <span class="score">245/6</span>
+                    <span class="team">SA Lions</span>
+                    <span class="match-status">🏏 Over 40</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Featured Sports -->
+        <section class="featured-sports fade-in-up delay-2">
+            <div class="sport-category">
+                <div class="category-header">
+                    <h2><i class="fas fa-futbol"></i> Football</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card hover-lift">
+                        <div class="match-teams">
+                            <div class="team">
+                                <div class="team-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="team-name">Dynamos FC</span>
+                            </div>
+                            <div class="match-score">
+                                <span class="score">3 - 2</span>
+                                <span class="match-status">FT</span>
+                            </div>
+                            <div class="team">
+                                <div class="team-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="team-name">Highlanders FC</span>
+                            </div>
+                        </div>
+                        <div class="match-details">
+                            <span><i class="fas fa-calendar"></i> Premier League</span>
+                            <span><i class="fas fa-map-marker-alt"></i> National Stadium</span>
+                            <span><i class="fas fa-clock"></i> Yesterday</span>
+                        </div>
+                        <a href="#" class="match-highlights">
+                            <i class="fas fa-play-circle"></i> Watch Highlights
+                        </a>
+                    </div>
+                    
+                    <div class="match-card hover-lift">
+                        <div class="match-teams">
+                            <div class="team">
+                                <div class="team-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="team-name">CAPS United</span>
+                            </div>
+                            <div class="match-score">
+                                <span class="score">1 - 1</span>
+                                <span class="match-status">FT</span>
+                            </div>
+                            <div class="team">
+                                <div class="team-logo">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="team-name">FC Platinum</span>
+                            </div>
+                        </div>
+                        <div class="match-details">
+                            <span><i class="fas fa-calendar"></i> Premier League</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Rufaro Stadium</span>
+                            <span><i class="fas fa-clock"></i> 2 days ago</span>
+                        </div>
+                        <a href="#" class="match-highlights">
+                            <i class="fas fa-play-circle"></i> Watch Highlights
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Other Sports -->
+        <section class="sports-categories fade-in-up delay-3">
+            <h2><i class="fas fa-list-alt"></i> Other Sports</h2>
+            <div class="sports-grid">
+                <div class="sport-card cricket hover-lift">
+                    <div class="sport-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3>Cricket</h3>
+                    <p>National team updates, domestic league scores, and international matches</p>
+                    <div class="sport-stats">
+                        <span>Last Match: ZIM vs IND</span>
+                        <span>Score: 289/7</span>
+                    </div>
+                </div>
+                
+                <div class="sport-card rugby hover-lift">
+                    <div class="sport-icon">
+                        <i class="fas fa-football-ball"></i>
+                    </div>
+                    <h3>Rugby</h3>
+                    <p>Sables fixtures, player transfers, and tournament updates</p>
+                    <div class="sport-stats">
+                        <span>Next Match: vs Kenya</span>
+                        <span>Date: 15 Feb 2025</span>
+                    </div>
+                </div>
+                
+                <div class="sport-card athletics hover-lift">
+                    <div class="sport-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Athletics</h3>
+                    <p>Track and field events, marathon results, and athlete profiles</p>
+                    <div class="sport-stats">
+                        <span>Upcoming: Harare Marathon</span>
+                        <span>Date: 1 Mar 2025</span>
+                    </div>
+                </div>
+                
+                <div class="sport-card basketball hover-lift">
+                    <div class="sport-icon">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Basketball</h3>
+                    <p>Local league updates, team standings, and player stats</p>
+                    <div class="sport-stats">
+                        <span>League: ZBA Season 2025</span>
+                        <span>Teams: 12</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sports News -->
+        <section class="sports-news fade-in-up delay-4">
+            <h2><i class="fas fa-newspaper"></i> Sports News & Analysis</h2>
+            <div class="news-grid">
+                <article class="news-item hover-lift">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Warriors Coach Announces New Squad</h3>
+                        <p class="news-excerpt">National team coach reveals 25-man squad for upcoming AFCON qualifiers with 5 new faces.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Sports Desk</span>
+                            <span><i class="fas fa-clock"></i> 3 hours ago</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-item hover-lift">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>Zimbabwe Athlete Breaks Record</h3>
+                        <p class="news-excerpt">Local sprinter sets new national record in 100m dash during regional championships.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Athletics Reporter</span>
+                            <span><i class="fas fa-clock"></i> 1 day ago</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        Your ultimate destination for Zimbabwean sports coverage.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Sports Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Football</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cricket</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Rugby</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Athletics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> News</a></li>
+                        <li><a href="sports.html"><i class="fas fa-chevron-right"></i> Sports</a></li>
+                        <li><a href="jobs.html"><i class="fas fa-chevron-right"></i> Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Sports Calendar</h3>
+                    <div class="calendar-events">
+                        <div class="event">
+                            <span class="event-date">20 Feb</span>
+                            <span class="event-name">Football: ZIM vs Zambia</span>
+                        </div>
+                        <div class="event">
+                            <span class="event-date">25 Feb</span>
+                            <span class="event-name">Cricket: Domestic Final</span>
+                        </div>
+                        <div class="event">
+                            <span class="event-date">1 Mar</span>
+                            <span class="event-name">Harare Marathon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 ZIMHUB Sports | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/sports.js"></script>
+</body>
+</html>

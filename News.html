@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News | ZIMHUB</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header color-wave">
+        <div class="container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <div class="tagline">
+                <h2>STAY INFORMED. STAY CONNECTED.</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search news articles...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html" class="active"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="scholarships.html"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- NEWS PAGE CONTENT -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header fade-in-up">
+            <h1><i class="fas fa-newspaper"></i> Latest News</h1>
+            <p>Stay updated with current affairs, breaking stories, and important updates from Zimbabwe and beyond</p>
+        </div>
+        
+        <!-- News Categories -->
+        <div class="categories-bar fade-in-up delay-1">
+            <button class="category-btn active" data-category="all">All News</button>
+            <button class="category-btn" data-category="politics">Politics</button>
+            <button class="category-btn" data-category="business">Business</button>
+            <button class="category-btn" data-category="technology">Technology</button>
+            <button class="category-btn" data-category="health">Health</button>
+            <button class="category-btn" data-category="education">Education</button>
+        </div>
+        
+        <!-- Breaking News Banner -->
+        <div class="breaking-news fade-in-up delay-2">
+            <div class="breaking-label">
+                <i class="fas fa-bullhorn"></i> BREAKING
+            </div>
+            <div class="breaking-content">
+                <span class="breaking-text">Zimbabwe announces new economic reforms to boost digital economy</span>
+                <a href="#" class="breaking-link">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <!-- Featured News -->
+        <section class="featured-news fade-in-up delay-3">
+            <h2><i class="fas fa-star"></i> Featured Stories</h2>
+            <div class="featured-grid">
+                <article class="featured-item hover-lift">
+                    <div class="featured-image">
+                        <div class="image-placeholder-large">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <span class="news-tag politics-tag">Politics</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Government Unveils 2025 Digital Transformation Plan</h3>
+                        <p class="news-excerpt">New policies aim to boost tech startups and digital infrastructure across the country with $50M investment fund.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> John Moyo</span>
+                            <span><i class="fas fa-clock"></i> 2 hours ago</span>
+                            <span><i class="fas fa-eye"></i> 2.5k views</span>
+                        </div>
+                        <a href="#" class="read-more-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="featured-item hover-lift">
+                    <div class="featured-image">
+                        <div class="image-placeholder-large">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="news-tag tech-tag">Technology</span>
+                    </div>
+                    <div class="featured-content">
+                        <h3>New Tech Hub Opens in Harare</h3>
+                        <p class="news-excerpt">Innovation center launched to support local entrepreneurs with co-working spaces and mentorship programs.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Sarah Chikomo</span>
+                            <span><i class="fas fa-clock"></i> 5 hours ago</span>
+                            <span><i class="fas fa-eye"></i> 1.8k views</span>
+                        </div>
+                        <a href="#" class="read-more-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Latest News Grid -->
+        <section class="news-grid-section fade-in-up delay-4">
+            <h2><i class="fas fa-list"></i> Latest Updates</h2>
+            <div class="news-grid">
+                <!-- News items will be loaded here -->
+                <div class="loading-spinner"></div>
+            </div>
+            
+            <div class="load-more-container">
+                <button class="load-more-btn">
+                    <i class="fas fa-sync-alt"></i> Load More News
+                </button>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter-section fade-in-up delay-5">
+            <div class="newsletter-card">
+                <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                <h3>Get Daily News Updates</h3>
+                <p>Subscribe to our newsletter and never miss important news</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="subscribe-btn">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </div>
+                <p class="newsletter-note"><i class="fas fa-shield-alt"></i> We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        Your trusted source for Zimbabwean news, updates, and opportunities.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> News</a></li>
+                        <li><a href="sports.html"><i class="fas fa-chevron-right"></i> Sports</a></li>
+                        <li><a href="jobs.html"><i class="fas fa-chevron-right"></i> Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>News Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Politics</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Business</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Health</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> news@zimhub.co.zw</p>
+                        <p><i class="fas fa-phone"></i> +263 242 123 456</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Harare, Zimbabwe</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 ZIMHUB News | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/news.js"></script>
+    
+</body>
+
+
+</html><script>
+document.addEventListener('DOMContentLoaded', async function() {
+    console.log('News page loaded - Fetching data from API');
+    
+    // DOM Elements
+    const newsGrid = document.querySelector('.news-grid');
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    
+    if (!newsGrid) return;
+    
+    // State
+    let currentPage = 1;
+    let currentCategory = 'all';
+    let isLoading = false;
+    
+    // Initialize
+    await loadNews();
+    
+    // Event Listeners
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', async function() {
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            currentCategory = this.dataset.category;
+            currentPage = 1;
+            
+            await loadNews();
+        });
+    });
+    
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', async function() {
+            if (isLoading) return;
+            
+            currentPage++;
+            await loadMoreNews();
+        });
+    }
+    
+    // ===== FUNCTIONS =====
+    async function loadNews() {
+        try {
+            showLoading();
+            
+            const params = {
+                page: currentPage,
+                limit: 6
+            };
+            
+            if (currentCategory !== 'all') {
+                params.category = currentCategory;
+            }
+            
+            const result = await zimhubAPI.getNews(params);
+            
+            if (result.success) {
+                renderNews(result.data);
+                
+                // Update load more button
+                if (loadMoreBtn) {
+                    const totalPages = result.pagination?.total_pages || 1;
+                    loadMoreBtn.style.display = currentPage < totalPages ? 'block' : 'none';
+                }
+            } else {
+                showError('Failed to load news');
+            }
+        } catch (error) {
+            console.error('Error loading news:', error);
+            showError('Unable to load news. Please try again.');
+            
+            // Show sample data as fallback
+            renderSampleNews();
+        }
+    }
+    
+    async function loadMoreNews() {
+        if (isLoading) return;
+        
+        isLoading = true;
+        loadMoreBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        
+        try {
+            const params = {
+                page: currentPage,
+                limit: 6
+            };
+            
+            if (currentCategory !== 'all') {
+                params.category = currentCategory;
+            }
+            
+            const result = await zimhubAPI.getNews(params);
+            
+            if (result.success && result.data.length > 0) {
+                renderMoreNews(result.data);
+                
+                // Update load more button
+                const totalPages = result.pagination?.total_pages || 1;
+                loadMoreBtn.style.display = currentPage < totalPages ? 'block' : 'none';
+                loadMoreBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Load More News';
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        } catch (error) {
+            console.error('Error loading more news:', error);
+            loadMoreBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Try Again';
+        } finally {
+            isLoading = false;
+        }
+    }
+    
+    function renderNews(articles) {
+        if (!articles || articles.length === 0) {
+            newsGrid.innerHTML = `
+                <div class="no-news">
+                    <i class="fas fa-newspaper"></i>
+                    <h3>No news articles found</h3>
+                    <p>Check back later for updates</p>
+                </div>
+            `;
+            return;
+        }
+        
+        newsGrid.innerHTML = articles.map((article, index) => createNewsCard(article, index)).join('');
+        
+        // Add click events to cards
+        document.querySelectorAll('.news-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const articleId = this.dataset.id;
+                viewArticle(articleId);
+            });
+        });
+    }
+    
+    function renderMoreNews(articles) {
+        const fragment = document.createDocumentFragment();
+        
+        articles.forEach((article, index) => {
+            const card = document.createElement('div');
+            card.className = 'news-card hover-lift';
+            card.dataset.id = article.id;
+            card.innerHTML = createNewsCard(article, index);
+            fragment.appendChild(card);
+        });
+        
+        newsGrid.appendChild(fragment);
+    }
+    
+    function createNewsCard(article, index) {
+        const categoryColors = {
+            politics: '#ff6b6b',
+            business: '#4ecdc4',
+            technology: '#4776E6',
+            health: '#9d50bb',
+            education: '#ffd166',
+            sports: '#00b09b',
+            entertainment: '#ff8e53'
+        };
+        
+        const categoryColor = categoryColors[article.category] || '#6c757d';
+        
+        return `
+            <div class="news-card hover-lift" data-id="${article.id}">
+                <div class="news-image">
+                    <div class="image-placeholder" style="background: ${categoryColor}">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <span class="news-category" style="background: ${categoryColor}">
+                        ${article.category}
+                    </span>
+                </div>
+                <div class="news-content">
+                    <h3>${article.title}</h3>
+                    <p class="news-excerpt">${article.excerpt || 'Read more about this story...'}</p>
+                    <div class="news-meta">
+                        <span><i class="fas fa-user"></i> ${article.author_name || 'Staff Reporter'}</span>
+                        <span><i class="fas fa-clock"></i> ${article.time_ago || 'Recently'}</span>
+                        <span><i class="fas fa-eye"></i> ${article.views || 0} views</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    function showLoading() {
+        newsGrid.innerHTML = `
+            <div class="loading-news">
+                <div class="loading-spinner"></div>
+                <p>Loading news articles...</p>
+            </div>
+        `;
+    }
+    
+    function showError(message) {
+        newsGrid.innerHTML = `
+            <div class="error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Oops!</h3>
+                <p>${message}</p>
+                <button class="btn-primary" onclick="loadNews()">
+                    <i class="fas fa-sync-alt"></i> Try Again
+                </button>
+            </div>
+        `;
+    }
+    
+    function renderSampleNews() {
+        // Fallback sample data
+        const sampleNews = [
+            {
+                id: 1,
+                title: 'Sample News Article 1',
+                category: 'technology',
+                excerpt: 'This is a sample news article for demonstration purposes.',
+                author_name: 'Sample Author',
+                views: 123,
+                time_ago: '2 hours ago'
+            },
+            {
+                id: 2,
+                title: 'Sample News Article 2',
+                category: 'business',
+                excerpt: 'Another sample article showing how content will appear.',
+                author_name: 'Sample Author',
+                views: 456,
+                time_ago: '1 day ago'
+            }
+        ];
+        
+        renderNews(sampleNews);
+    }
+    
+    async function viewArticle(articleId) {
+        try {
+            const result = await zimhubAPI.getNewsById(articleId);
+            
+            if (result.success) {
+                // In a real implementation, this would navigate to article page
+                // For now, show a modal
+                showArticleModal(result.data);
+            }
+        } catch (error) {
+            console.error('Error loading article:', error);
+            showNotification('Unable to load article details', 'error');
+        }
+    }
+    
+    function showArticleModal(article) {
+        // Create modal for article view
+        const modal = document.createElement('div');
+        modal.className = 'article-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>${article.title}</h2>
+                    <button class="modal-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="article-meta">
+                        <span class="category">${article.category}</span>
+                        <span><i class="fas fa-user"></i> ${article.author_name}</span>
+                        <span><i class="fas fa-calendar"></i> ${new Date(article.published_at).toLocaleDateString()}</span>
+                        <span><i class="fas fa-eye"></i> ${article.views} views</span>
+                    </div>
+                    <div class="article-content">
+                        ${article.content || '<p>Article content would appear here...</p>'}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Close modal
+        modal.querySelector('.modal-close').addEventListener('click', () => {
+            modal.remove();
+        });
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
+    }
+    
+    // Load breaking news
+    async function loadBreakingNews() {
+        try {
+            const result = await zimhubAPI.getFeaturedNews(3);
+            
+            if (result.success && result.data.length > 0) {
+                const breakingNews = document.querySelector('.breaking-news');
+                if (breakingNews) {
+                    const firstArticle = result.data[0];
+                    breakingNews.querySelector('.breaking-text').textContent = firstArticle.title;
+                }
+            }
+        } catch (error) {
+            console.error('Error loading breaking news:', error);
+        }
+    }
+    
+    // Load featured news
+    async function loadFeaturedNews() {
+        try {
+            const result = await zimhubAPI.getFeaturedNews(2);
+            
+            if (result.success && result.data.length >= 2) {
+                const featuredGrid = document.querySelector('.featured-grid');
+                if (featuredGrid) {
+                    featuredGrid.innerHTML = result.data.map((article, index) => `
+                        <article class="featured-item hover-lift">
+                            <div class="featured-image">
+                                <div class="image-placeholder-large">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <span class="news-tag">${article.category}</span>
+                            </div>
+                            <div class="featured-content">
+                                <h3>${article.title}</h3>
+                                <p class="news-excerpt">${article.excerpt || ''}</p>
+                                <div class="news-meta">
+                                    <span><i class="fas fa-user"></i> ${article.author_name}</span>
+                                    <span><i class="fas fa-clock"></i> ${article.time_ago}</span>
+                                    <span><i class="fas fa-eye"></i> ${article.views} views</span>
+                                </div>
+                                <a href="#" class="read-more-btn" onclick="viewArticle(${article.id})">
+                                    Read Full Story <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    `).join('');
+                }
+            }
+        } catch (error) {
+            console.error('Error loading featured news:', error);
+        }
+    }
+    
+    // Initialize
+    loadBreakingNews();
+    loadFeaturedNews();
+});
+</script>

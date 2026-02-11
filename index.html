@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIMHUB | CONNECT. INFORM. OPPORTUNITY.</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style-main.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header animate-color-wave">
+        <div class="container">
+            <!-- LOGO -->
+            <div class="logo-container" style="cursor: pointer;" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text animate-text-glow">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <!-- TAGLINE -->
+            <div class="tagline animate-fade-up delay-1">
+                <h2>CONNECT. INFORM. OPPORTUNITY.</h2>
+            </div>
+            
+            <!-- SEARCH BAR -->
+            <div class="search-container animate-fade-up delay-2">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search news, jobs, scholarships...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- NAVIGATION MENU -->
+            <nav class="main-nav">
+                <ul class="nav-list animate-fade-up delay-3">
+                    <li><a href="index.html" class="active hover-color-shift"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html" class="hover-color-shift"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html" class="hover-color-shift"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html" class="hover-color-shift"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="Scholarships.html" class="hover-color-shift"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html" class="hover-color-shift"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <!-- MOBILE MENU -->
+            <button class="mobile-menu-btn animate-pulse-slow">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content animate-slide-left">
+                <h1 class="hero-title">
+                    Welcome to <span class="highlight">ZIMHUB</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Your premier destination for <span class="typing-text"></span>
+                </p>
+                <p class="hero-description">
+                    Stay connected with the latest news, sports updates, job opportunities, 
+                    scholarships, and expert business advice. All in one place.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn-primary hover-lift animate-float">
+                        <i class="fas fa-rocket"></i> Explore Features
+                    </a>
+                    <a href="#trending" class="btn-secondary hover-lift">
+                        <i class="fas fa-fire"></i> Trending Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image animate-slide-right delay-1">
+                <div class="image-placeholder">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3>Zimbabwe's Digital Hub</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED CATEGORIES -->
+    <section id="features" class="categories-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">
+                <i class="fas fa-th-large"></i> Explore Categories
+            </h2>
+            <p class="section-subtitle animate-fade-up delay-1">
+                Choose from our comprehensive selection of categories
+            </p>
+            
+            <div class="categories-grid">
+                <!-- NEWS CARD -->
+                <a href="news.html" class="category-card hover-lift animate-fade-up delay-1">
+                    <div class="card-icon news-bg">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Latest News</h3>
+                    <p>Stay updated with current affairs, politics, and breaking stories</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-article"></i> 45+ Articles</span>
+                        <span><i class="fas fa-eye"></i> Live Updates</span>
+                    </div>
+                </a>
+                
+                <!-- SPORTS CARD -->
+                <a href="sports.html" class="category-card hover-lift animate-fade-up delay-2">
+                    <div class="card-icon sports-bg">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Football, cricket, rugby scores and analysis</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-trophy"></i> Live Scores</span>
+                        <span><i class="fas fa-users"></i> Team Analysis</span>
+                    </div>
+                </a>
+                
+                <!-- JOBS CARD -->
+                <a href="jobs.html" class="category-card hover-lift animate-fade-up delay-3">
+                    <div class="card-icon jobs-bg">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Job Opportunities</h3>
+                    <p>Find your dream job with our curated listings</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-bell"></i> Daily Alerts</span>
+                        <span><i class="fas fa-upload"></i> Easy Apply</span>
+                    </div>
+                </a>
+                
+                <!-- SCHOLARSHIPS CARD -->
+                <a href="scholarships.html" class="category-card hover-lift animate-fade-up delay-4">
+                    <div class="card-icon scholarship-bg">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Scholarships</h3>
+                    <p>Funding opportunities for local and international studies</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-award"></i> Verified</span>
+                        <span><i class="fas fa-calendar"></i> Deadlines</span>
+                    </div>
+                </a>
+                
+                <!-- BUSINESS CARD -->
+                <a href="business.html" class="category-card hover-lift animate-fade-up delay-5">
+                    <div class="card-icon business-bg">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Tips</h3>
+                    <p>Financial advice, startup guides, and market insights</p>
+                    <div class="card-stats">
+                        <span><i class="fas fa-lightbulb"></i> Expert Advice</span>
+                        <span><i class="fas fa-download"></i> Free Resources</span>
+                    </div>
+                    
+                </a>
+                
+                <!-- CONTACT CARD -->
+                <div class="category-card contact-card hover-lift animate-fade-up delay-6">
+                    <div class="card-icon contact-bg">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Get in Touch</h3>
+                    <p>Have suggestions? Want to advertise? Contact us!</p>
+                    <button class="btn-contact hover-glow">
+                        <i class="fas fa-envelope"></i> Contact TH7MEDIA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING NOW SECTION -->
+    <section id="trending" class="trending-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-fade-up">
+                    <i class="fas fa-fire"></i> Trending Now
+                </h2>
+                <div class="trending-tabs animate-fade-up delay-1">
+                    <button class="tab-btn active" data-tab="news">News</button>
+                    <button class="tab-btn" data-tab="jobs">Jobs</button>
+                    <button class="tab-btn" data-tab="sports">Sports</button>
+                </div>
+            </div>
+            
+            <div class="trending-content">
+                <!-- NEWS TAB -->
+                <div class="tab-pane active" id="news-tab">
+                    <div class="trending-grid">
+                        <!-- Trending items will be loaded by JS -->
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+                
+                <!-- JOBS TAB -->
+                <div class="tab-pane" id="jobs-tab">
+                    <div class="trending-grid">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+                
+                <!-- SPORTS TAB -->
+                <div class="tab-pane" id="sports-tab">
+                    <div class="trending-grid">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote-section animate-color-wave">
+        <div class="container">
+            <div class="quote-content animate-fade-up">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote-text">
+                    "Nobody is going to come and save you, you save yourself. 
+                    Choose on focusing on your best self."
+                </p>
+                <p class="quote-author">- Talent Hondo (TH7MEDIA)</p>
+                <div class="quote-tag">
+                    <i class="fas fa-code"></i> CREATE. SHIP. ITERATE.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col animate-fade-up">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        A project by Talent Hondo (TH7MEDIA) - Bringing Zimbabwe's digital space together.
+                    </p>
+                </div>
+                
+                <div class="footer-col animate-fade-up delay-1">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> News</a></li>
+                        <li><a href="sports.html"><i class="fas fa-chevron-right"></i> Sports</a></li>
+                        <li><a href="jobs.html"><i class="fas fa-chevron-right"></i> Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col animate-fade-up delay-2">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="scholarships.html"><i class="fas fa-chevron-right"></i> Scholarships</a></li>
+                        <li><a href="business.html"><i class="fas fa-chevron-right"></i> Business Tips</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col animate-fade-up delay-3">
+                    <h3>Project Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <span class="timeline-day">Day 1</span>
+                            <span class="timeline-task">Research & Structure ✓</span>
+                        </div>
+                        <div class="timeline-item active">
+                            <span class="timeline-day">Day 2</span>
+                            <span class="timeline-task">HTML & CSS ✓</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-day">Day 3</span>
+                            <span class="timeline-task">JavaScript</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-day">Day 4</span>
+                            <span class="timeline-task">Database/Storage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom animate-fade-up delay-4">
+                <p class="copyright">
+                    © 2025 ZIMHUB | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+                <p class="day-counter">
+                    <i class="fas fa-calendar-day"></i> Project Day: <span id="currentDay">2</span> of 7
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    
+<script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>

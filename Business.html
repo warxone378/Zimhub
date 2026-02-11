@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Tips | ZIMHUB</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header color-wave">
+        <div class="container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <div class="tagline">
+                <h2>GROW YOUR BUSINESS. ACHIEVE SUCCESS.</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search business topics...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="scholarships.html"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html" class="active"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- BUSINESS PAGE CONTENT -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header fade-in-up">
+            <h1><i class="fas fa-briefcase"></i> Business & Finance Hub</h1>
+            <p>Expert advice, market insights, and strategies to grow your business in Zimbabwe</p>
+        </div>
+        
+        <!-- Quick Stats -->
+        <div class="quick-stats fade-in-up delay-1">
+            <div class="stat-card hover-lift">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Market Growth</h3>
+                    <p class="stat-value">+4.2%</p>
+                    <p class="stat-desc">Zimbabwe GDP Growth 2024</p>
+                </div>
+            </div>
+            
+            <div class="stat-card hover-lift">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Forex Rate</h3>
+                    <p class="stat-value">1:560</p>
+                    <p class="stat-desc">USD to ZWL</p>
+                </div>
+            </div>
+            
+            <div class="stat-card hover-lift">
+                <div class="stat-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Startups</h3>
+                    <p class="stat-value">245+</p>
+                    <p class="stat-desc">Registered in 2024</p>
+                </div>
+            </div>
+            
+            <div class="stat-card hover-lift">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Employment</h3>
+                    <p class="stat-value">12.4%</p>
+                    <p class="stat-desc">Formal Sector Growth</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Business Categories -->
+        <section class="business-categories fade-in-up delay-2">
+            <h2><i class="fas fa-th-large"></i> Business Topics</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card hover-lift">
+                    <div class="category-icon finance">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Financial Management</h3>
+                    <p>Budgeting, accounting, cash flow management</p>
+                    <span class="article-count">15 Articles</span>
+                </a>
+                
+                <a href="#" class="category-card hover-lift">
+                    <div class="category-icon marketing">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketing & Sales</h3>
+                    <p>Digital marketing, branding, customer acquisition</p>
+                    <span class="article-count">22 Articles</span>
+                </a>
+                
+                <a href="#" class="category-card hover-lift">
+                    <div class="category-icon startup">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Startup Guide</h3>
+                    <p>Business planning, funding, legal requirements</p>
+                    <span class="article-count">18 Articles</span>
+                </a>
+                
+                <a href="#" class="category-card hover-lift">
+                    <div class="category-icon tech">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Tech for Business</h3>
+                    <p>Digital tools, e-commerce, automation</p>
+                    <span class="article-count">12 Articles</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Featured Articles -->
+        <section class="featured-articles fade-in-up delay-3">
+            <h2><i class="fas fa-star"></i> Featured Business Tips</h2>
+            <div class="articles-grid">
+                <article class="article-card hover-lift">
+                    <div class="article-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="article-tag finance-tag">Finance</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Managing Cash Flow in Tough Economy</h3>
+                        <p class="article-excerpt">Practical strategies to maintain positive cash flow and survive economic challenges in Zimbabwe's business environment.</p>
+                        <div class="article-meta">
+                            <span><i class="fas fa-user"></i> Finance Expert</span>
+                            <span><i class="fas fa-clock"></i> 5 days ago</span>
+                            <span><i class="fas fa-eye"></i> 3.2k reads</span>
+                        </div>
+                        <a href="#" class="read-article-btn">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="article-card hover-lift">
+                    <div class="article-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <span class="article-tag ecommerce-tag">E-commerce</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Starting an Online Business in Zimbabwe</h3>
+                        <p class="article-excerpt">Complete guide to launching your e-commerce store, from platform selection to payment gateways and delivery logistics.</p>
+                        <div class="article-meta">
+                            <span><i class="fas fa-user"></i> E-commerce Coach</span>
+                            <span><i class="fas fa-clock"></i> 1 week ago</span>
+                            <span><i class="fas fa-eye"></i> 4.1k reads</span>
+                        </div>
+                        <a href="#" class="read-article-btn">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Financial Tools -->
+        <section class="financial-tools fade-in-up delay-4">
+            <div class="tools-header">
+                <h2><i class="fas fa-calculator"></i> Financial Calculators</h2>
+                <p>Use our free tools to make informed business decisions</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card hover-lift">
+                    <div class="tool-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Loan Calculator</h3>
+                    <p>Calculate monthly payments and total interest for business loans</p>
+                    <button class="use-tool-btn">
+                        <i class="fas fa-external-link-alt"></i> Use Tool
+                    </button>
+                </div>
+                
+                <div class="tool-card hover-lift">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>ROI Calculator</h3>
+                    <p>Calculate return on investment for your business projects</p>
+                    <button class="use-tool-btn">
+                        <i class="fas fa-external-link-alt"></i> Use Tool
+                    </button>
+                </div>
+                
+                <div class="tool-card hover-lift">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Invoice Generator</h3>
+                    <p>Create professional invoices for your clients in minutes</p>
+                    <button class="use-tool-btn">
+                        <i class="fas fa-external-link-alt"></i> Use Tool
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Business Directory -->
+        <section class="business-directory fade-in-up delay-5">
+            <div class="directory-header">
+                <h2><i class="fas fa-address-book"></i> Business Directory</h2>
+                <p>Connect with trusted service providers</p>
+            </div>
+            <div class="directory-categories">
+                <div class="directory-category">
+                    <h4><i class="fas fa-balance-scale"></i> Legal Services</h4>
+                    <div class="directory-items">
+                        <span>Business Registration</span>
+                        <span>Contract Lawyers</span>
+                        <span>Tax Consultants</span>
+                    </div>
+                </div>
+                
+                <div class="directory-category">
+                    <h4><i class="fas fa-wifi"></i> Digital Services</h4>
+                    <div class="directory-items">
+                        <span>Web Development</span>
+                        <span>Digital Marketing</span>
+                        <span>Graphic Design</span>
+                    </div>
+                </div>
+                
+                <div class="directory-category">
+                    <h4><i class="fas fa-truck"></i> Logistics</h4>
+                    <div class="directory-items">
+                        <span>Courier Services</span>
+                        <span>Warehousing</span>
+                        <span>Import/Export</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        Empowering Zimbabwean entrepreneurs and business owners.
+                    </p>
+                    <div class="newsletter-signup">
+                        <p><strong>Get Business Insights</strong></p>
+                        <input type="email" placeholder="Your business email">
+                        <button class="subscribe-btn">
+                            <i class="fas fa-envelope"></i> Subscribe
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Business Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Business Plans</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Market Research</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Funding Options</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tax Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="business.html"><i class="fas fa-chevron-right"></i> Business Tips</a></li>
+                        <li><a href="jobs.html"><i class="fas fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="news.html"><i class="fas fa-chevron-right"></i> Business News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Business Support</h3>
+                    <div class="support-info">
+                        <p><i class="fas fa-headset"></i> Free Consultation: Mon-Fri, 9AM-4PM</p>
+                        <p><i class="fas fa-envelope"></i> business@zimhub.co.zw</p>
+                        <p><i class="fas fa-phone"></i> +263 242 345 678</p>
+                        <a href="#" class="consult-btn">
+                            <i class="fas fa-calendar-check"></i> Book Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 ZIMHUB Business | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <div class="business-disclaimer">
+                    <p><i class="fas fa-exclamation-circle"></i> Disclaimer: Content is for informational purposes only. Consult professionals for specific advice.</p>
+                </div>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+   <script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/business.js"></script>
+</body>
+</html>

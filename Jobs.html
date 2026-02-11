@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities | ZIMHUB</title>
+    <link rel="stylesheet" href="css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-transition">
+    <!-- HEADER -->
+    <header class="main-header color-wave">
+        <div class="container">
+            <div class="logo-container" onclick="window.location.href='index.html'">
+                <img src="images/logo.png" alt="ZIMHUB Logo" class="logo-img">
+                <h1 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h1>
+            </div>
+            
+            <div class="tagline">
+                <h2>FIND YOUR DREAM JOB TODAY</h2>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search jobs by title, company, or location...">
+                    <button id="searchBtn" class="hover-glow">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                    <li><a href="jobs.html" class="active"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                    <li><a href="scholarships.html"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+                    <li><a href="business.html"><i class="fas fa-chart-line"></i> Business Tips</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- JOBS PAGE CONTENT -->
+    <main class="container">
+        <!-- Page Header -->
+        <div class="page-header fade-in-up">
+            <h1><i class="fas fa-briefcase"></i> Job Opportunities</h1>
+            <p>Find your next career move with our curated job listings from top employers in Zimbabwe</p>
+        </div>
+        
+        <!-- Job Search Filters -->
+        <div class="job-filters fade-in-up delay-1">
+            <div class="filter-group">
+                <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                <select class="filter-select">
+                    <option value="">All Locations</option>
+                    <option value="harare">Harare</option>
+                    <option value="bulawayo">Bulawayo</option>
+                    <option value="mutare">Mutare</option>
+                    <option value="gweru">Gweru</option>
+                    <option value="remote">Remote</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label><i class="fas fa-filter"></i> Job Type</label>
+                <select class="filter-select">
+                    <option value="">All Types</option>
+                    <option value="fulltime">Full-time</option>
+                    <option value="parttime">Part-time</option>
+                    <option value="contract">Contract</option>
+                    <option value="internship">Internship</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label><i class="fas fa-industry"></i> Industry</label>
+                <select class="filter-select">
+                    <option value="">All Industries</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                </select>
+            </div>
+            
+            <button class="filter-btn">
+                <i class="fas fa-search"></i> Filter Jobs
+            </button>
+        </div>
+        
+        <!-- Featured Jobs -->
+        <section class="featured-jobs fade-in-up delay-2">
+            <h2><i class="fas fa-star"></i> Featured Jobs</h2>
+            <div class="jobs-grid">
+                <div class="job-card hover-lift">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="job-title">
+                            <h3>Senior Software Developer</h3>
+                            <p class="company-name">TechCorp Zimbabwe</p>
+                        </div>
+                        <span class="job-type fulltime">Full-time</span>
+                    </div>
+                    
+                    <div class="job-details">
+                        <p class="job-description">We're looking for an experienced developer to join our growing team. Must have 3+ years experience with React and Node.js.</p>
+                        
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Harare (Remote Available)</span>
+                            <span><i class="fas fa-money-bill-wave"></i> $2,500 - $3,500/month</span>
+                            <span><i class="fas fa-calendar"></i> Posted: 2 days ago</span>
+                        </div>
+                        
+                        <div class="job-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="job-actions">
+                        <button class="apply-btn">
+                            <i class="fas fa-paper-plane"></i> Apply Now
+                        </button>
+                        <button class="save-btn">
+                            <i class="far fa-bookmark"></i> Save
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="job-card hover-lift">
+                    <div class="job-header">
+                        <div class="company-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="job-title">
+                            <h3>Marketing Manager</h3>
+                            <p class="company-name">Growth Finance Ltd</p>
+                        </div>
+                        <span class="job-type fulltime">Full-time</span>
+                    </div>
+                    
+                    <div class="job-details">
+                        <p class="job-description">Lead our marketing team and develop strategies to expand our market presence in the financial sector.</p>
+                        
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bulawayo</span>
+                            <span><i class="fas fa-money-bill-wave"></i> $2,000 - $2,800/month</span>
+                            <span><i class="fas fa-calendar"></i> Posted: 1 week ago</span>
+                        </div>
+                        
+                        <div class="job-skills">
+                            <span class="skill-tag">Digital Marketing</span>
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Social Media</span>
+                            <span class="skill-tag">Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="job-actions">
+                        <button class="apply-btn">
+                            <i class="fas fa-paper-plane"></i> Apply Now
+                        </button>
+                        <button class="save-btn">
+                            <i class="far fa-bookmark"></i> Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Job Categories -->
+        <section class="job-categories fade-in-up delay-3">
+            <h2><i class="fas fa-th-large"></i> Browse by Category</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card tech-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p class="job-count">45 Jobs Available</p>
+                </a>
+                
+                <a href="#" class="category-card finance-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Finance</h3>
+                    <p class="job-count">32 Jobs Available</p>
+                </a>
+                
+                <a href="#" class="category-card healthcare-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p class="job-count">28 Jobs Available</p>
+                </a>
+                
+                <a href="#" class="category-card education-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p class="job-count">21 Jobs Available</p>
+                </a>
+                
+                <a href="#" class="category-card engineering-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Engineering</h3>
+                    <p class="job-count">19 Jobs Available</p>
+                </a>
+                
+                <a href="#" class="category-card sales-category hover-lift">
+                    <div class="category-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Sales & Marketing</h3>
+                    <p class="job-count">36 Jobs Available</p>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Latest Jobs -->
+        <section class="latest-jobs fade-in-up delay-4">
+            <h2><i class="fas fa-clock"></i> Recently Posted</h2>
+            <div class="jobs-list">
+                <!-- Jobs will be loaded here -->
+                <div class="loading-spinner"></div>
+            </div>
+            
+            <div class="view-all-jobs">
+                <a href="#" class="view-all-btn">
+                    <i class="fas fa-list"></i> View All Job Listings
+                </a>
+            </div>
+        </section>
+        
+        <!-- CV Builder CTA -->
+        <section class="cv-builder fade-in-up delay-5">
+            <div class="cv-card">
+                <i class="fas fa-file-alt cv-icon"></i>
+                <h3>Need a Professional CV?</h3>
+                <p>Create a winning resume with our free CV builder tool</p>
+                <button class="cv-builder-btn">
+                    <i class="fas fa-magic"></i> Build Your CV Now
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <h2 class="logo-text">ZIM<span style="color: var(--accent-gold);">HUB</span></h2>
+                    </div>
+                    <p class="footer-motto">CONNECT. INFORM. OPPORTUNITY.</p>
+                    <p class="footer-description">
+                        Connecting talented professionals with great opportunities in Zimbabwe.
+                    </p>
+                    <div class="employer-cta">
+                        <p><strong>Are you an employer?</strong></p>
+                        <a href="#" class="post-job-btn">
+                            <i class="fas fa-plus-circle"></i> Post a Job
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Job Seekers</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Browse Jobs</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Career Advice</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> CV Builder</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Interview Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Employers</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Post Jobs</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Search CVs</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Employer Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pricing Plans</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Job Support</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> jobs@zimhub.co.zw</p>
+                        <p><i class="fas fa-phone"></i> +263 242 789 012</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri, 8AM-5PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2025 ZIMHUB Jobs | Created by <strong>Talent Hondo (TH7MEDIA)</strong>
+                </p>
+                <p class="prayer">
+                    <i class="fas fa-hands-praying"></i> SO HELP ME GOD
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/utils.js"></script>
+
+<!-- Update main.js reference -->
+<script src="js/main.js" defer></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>
